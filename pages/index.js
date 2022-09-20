@@ -40,7 +40,6 @@ export const getServerSideProps = withServerSideAuth(
     }
     const request = await fetch('https://catfact.ninja/fact');
     const catFacts = await request.json();
-    console.log(catFacts);
     return {
       props: {
         catFacts
